@@ -1,0 +1,59 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "useDefineForClassFields": true,
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "module": "ESNext",
+        "skipLibCheck": true,
+        "paths": {
+            "@/*": ["./*"],
+
+            "@types": ["./src/types"],
+            "@interface": ["./src/types/interface"],
+            "@global-interface": ["./src/types/global-interface"],
+            "@enums": ["./src/types/enums"],
+            "@validations": ["./src/validations"],
+
+            "@utils": ["./src/utils"],
+            "@coocse": ["./src/utils/cocies.ts"],
+            "@hooks": ["./src/hooks"],
+
+            "@components": ["./src/components"],
+            "@containers": ["./src/components/containers"],
+            "@ui": ["./src/components/ui"],
+            "@sections": ["./src/components/sections"],
+
+            "@layut": ["./src/layout"],
+            "@pages": ["./src/pages"],
+            "@router": ["./src/router"],
+            "@context": ["./src/context"],
+            
+            "@services": ["./src/services"],
+            "@product": ["./src/service/product"],
+            "@like": ["./src/service/like"],
+
+            "@stor-product": ["./src/stor/stor-product"],
+            "@stor-like": ["./src/stor/stor-like"],
+
+
+            "@imgs" : ["./src/assets/imgs"],
+
+            
+        },
+        /* Bundler mode */
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+
+        /* Linting */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true
+    },
+    "include": ["src"],
+    "references": [{"path": "./tsconfig.node.json"}]
+}
